@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Rock Paper Scissor</title>
+  </head>
+  <body>
+    <center>
+        <img src="https://cdn.zmescience.com/wp-content/uploads/2017/08/rock-paper-scissors-156171_960_720.png" >
+        <h1>ROCK-PAPER-SCISSOR</h1>
+        <hr>
+        Enter Yourname : <input type="text" id="un" > <input type="submit" value="play" id="sub" onclick="name1()"/>
+        <br><br>
+        <table id="table1" border="1px">
+            <th>HIGH SCORER</th>
+            <center>
+            <tr><td><span id="p1"></span> <span id="p1"></span></td></tr>
+            <tr><td><span id="p2"></span><span id="pt2"></span></td></tr>
+            <tr><td><span id="p3"></span><span id="pt3"></span></td></tr>
+            </center>
+        </table>
+      <h3>Get 5 points Before Computer to Win!!!</h3>
+      <table>
+        <tr>
+          <td>
+            <section id="player">
+              <span>Your Turn : </span>
+              <button  id="btn1" disabled onclick="play('Rock')"><img src="https://tse2.mm.bing.net/th?id=OIP.pOJmusTrUfnb1wLup79jhgHaGV&pid=Api&P=0" alt="Rock"/></button>
+              <button id="btn2" disabled onclick="play('Paper')"><img src="https://www.pinclipart.com/picdir/big/536-5360310_transparent-rock-paper-scissors-clipart-rock-paper-scissors.png" alt="paper"/></button>
+              <button id="btn3" disabled onclick="play('Scissors')"><img src="https://www.pngjoy.com/pngl/816/9660182_rock-paper-scissors-mickey-mouse-hand-drawing-transparent.png" alt="scissor"/></button>
+            </section>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>Computer : </span>
+            <button ><img src="https://cdn-icons-png.flaticon.com/512/6356/6356630.png" alt="None" id="computer"/></button>
+            <hr>
+            <center>
+              <h3 id="result">Tie</h3>
+            </center>
+            <hr>
+          </td>
+          
+        </tr>
+        <tr>
+          <td>
+            <span>
+              Your Score : <span id="yourScore">0</span>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span>
+              Computer Score :
+              <span id="computerScore">0</span>
+            </span>
+          </td>
+        </tr>
+        <tr>
+            <td>
+                <center><span>
+                    Points : <span id="pts">0</span>
+                </span>
+                </center>
+                </td>
+                </tr>
+
+        <tr><td>
+               <center> <button id="stp" disabled onclick="stopgames()">Stop</button></center>
+            </td>
+        </tr>
+        <script src="script.js"></script>
+      </table>
+    </center>
+  </body>
+</html>
